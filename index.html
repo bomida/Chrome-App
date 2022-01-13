@@ -5,19 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>Chrome App</title>
 </head>
 <body>
+  <!-- greeting -->
   <form id="login-form" class="hidden">
-    <input required maxlength="15" type="text" placeholder="What is your name?">
-    <input type="submit" value="Lon In">
+    <input
+      required
+      maxlength="15"
+      type="text"
+      placeholder="What is your name?">
+    <input
+      type="submit"
+      value="Lon In">
   </form>
   <h1 id="greeting" class="hidden"></h1>
+
+  <!-- clock -->
   <h2 id="clock"></h2>
 
+  <!-- quote -->
+  <div id="quote">
+    <span></span>
+  </div>
 
+  
   <script src="./src/greeting.js"></script>
   <script src="./src/clock.js"></script>
+  <script src="./src/quotes.js"></script>
+  <script src="./src/backgroun.js"></script>
 </body>
 </html>
