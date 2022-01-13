@@ -14,8 +14,7 @@ function onLoginSubmit(event) {
   loginForm.classList.add(HIDDEN_CLASSNAME);
   // loginInput의 값을 변수로 선언한다.
   const username = loginInput.value;
-  // 저장한 변수를 localStroage에 저장한다.
-  //localStroage는 브라우저에서 제공하는 저장하는 API이다. (localStroage.+setItem / getItem / removeItem을 사용할 수 있다)
+  // loginInput.value를 username이라는 변수로 저장해준다.
   localStorage.setItem(USERNAME_KEY, username);
   // paintGreetings 함수를 호출한다.
   paintGreetings(username);
@@ -28,7 +27,7 @@ function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-// localStorage에 저장된 username을 변수로 선언한 것
+// localStorage에 저장된 username을 받아서 변수로 선언한 것
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
