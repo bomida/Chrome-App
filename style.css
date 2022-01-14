@@ -1,13 +1,14 @@
 body {
-  /* font-family: 'East Sea Dokdo', cursive; */
   font-family:monospace;
-  background: center center cover no-repeat fixed;
+
   width: 100vw;
   height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   color: aliceblue;
 
 }
@@ -17,12 +18,12 @@ body {
 input {
   all: inherit;
   display: inline;
-  padding-right: 24px;
-  padding-left: 24px;
   height: 50px;
+  padding: 0 24px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   color: #222;
+  /* text-align: center; */
   font-size: 1rem;
 }
 input::placeholder {
@@ -34,12 +35,16 @@ h2 {
 }
 
 img {
+  min-width: 1280px;
+  min-height: 700px;
+
+  width: 100%;
+  height: auto;
+
   position: fixed;
-  width: 100vw;
   top: 0;
   left: 0;
   z-index: -1;
-  background-size: contain;
 }
 
 span {
