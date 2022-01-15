@@ -1,3 +1,6 @@
+@charset 'UTF-8';
+@import 'reset.css';
+
 body {
   font-family:monospace;
 
@@ -21,7 +24,7 @@ input {
   height: 50px;
   padding: 0 24px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   color: #222;
   /* text-align: center; */
   font-size: 1rem;
@@ -49,4 +52,14 @@ img {
 
 span {
   font-size: 1.1rem;
+}
+
+button {
+  margin-right: 15px;
+  text-align: center;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 16px;
 }
