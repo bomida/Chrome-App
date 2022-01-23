@@ -5,6 +5,5 @@ const chosenImg = imgs[Math.floor(Math.random()*imgs.length)];
 const background = document.querySelector('#background');
 const bgImg = document.createElement('img');
 
-bgImg.src = `/img/${chosenImg}`;
-
+bgImg.src = `img/${chosenImg}`;
 background.appendChild(bgImg);
