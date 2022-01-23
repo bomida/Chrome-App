@@ -46,7 +46,7 @@ HTML, CSS, Vanilla JS를 이용하여 크롬 앱을 만들었습니다.
 <br>
 
 ## 최종 결과물
-<img width="640" alt="스크린샷 2022-01-23 오후 6 04 53" src="https://user-images.githubusercontent.com/93115007/150671694-00328f6c-5d21-485f-9009-e34d9a9df608.png">
+<img width="640" alt="최종 결과문" src="https://user-images.githubusercontent.com/93115007/150671891-a41c3600-dbff-4822-8526-8e83aefde7d5.png">
 
 <br>
 
