@@ -117,13 +117,13 @@ body {
   margin: 0 auto;
 }
 .todo-list li {
-  margin-bottom: 10px;
+  margin-bottom: var(--base-space);
 }
 .todo-list button {
   cursor: pointer;
   width: 28px;
   height: 28px;
-  margin-right: var(--base-space);
+  margin-right: 5px;
   border: none;
   background-color: rgba(255, 255, 255, 0.0);
 }
