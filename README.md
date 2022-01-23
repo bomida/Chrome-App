@@ -28,9 +28,10 @@ HTML, CSS, Vanilla JS를 이용하여 크롬 앱을 만들었습니다.
   - padStart()로 한자리 숫자일 때 앞에 '0'을 붙여 두자리 수로 만들어준다.
   - Math()함수를 이용해 랜덤 숫자를 구한다.
   - appendChild()메소드로 만든 img태그를 body영역에 마지막 자식으로 추가해준다.
-  - stringify()로 toDos 배열의 요소를 문자열로 변환해 localStorage에 저장한다.
-  - parse()로 localStorage에 저장되어있던 요소들을 다시 가져와 배열의 형태로 만들어준다.
-  - filter(), parseInt 
+  - stringify()로 toDos 배열의 요소를 문자열로 변환해 localStorage에 복사한다.
+  - parse()로 localStorage에 복사되어있던 요소들을 다시 가져와 배열의 형태로 만들어준다.
+  - 리스트를 생성했을 때 주어졌던 id를 filter()통해 선택된 toDo의 id가 li의 id와 다른 것은 남긴다.
+    <br>이 때, li의 id값은 숫자이기 때문에 parse()를 사용해 문자열을 숫자로 바꿔준다.
 
 <br>
 
@@ -41,6 +42,11 @@ HTML, CSS, Vanilla JS를 이용하여 크롬 앱을 만들었습니다.
 ## 개발 환경
   - 개발도구: VSCode, Github
   - 사용언어: HTML, CSS, Vanilla JS
+
+<br>
+
+## 최종 결과물
+<img width="640" alt="스크린샷 2022-01-23 오후 6 04 53" src="https://user-images.githubusercontent.com/93115007/150671694-00328f6c-5d21-485f-9009-e34d9a9df608.png">
 
 <br>
 

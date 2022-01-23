@@ -99,14 +99,14 @@ body {
 
 /* todo-form */
 .todo-form {
-  margin-top: 80px;
+  margin-top: 220px;
 }
 .todo-form input[type = 'text'] {
   all: unset;
   width: 280px;
   font-size: var(--font-size);
   padding: var(--base-space);
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #fff;
 }
 .todo-form input::placeholder{
@@ -116,14 +116,16 @@ body {
   width: 280px;
   margin: 0 auto;
 }
+.todo-list li {
+  margin-bottom: 10px;
+}
 .todo-list button {
   cursor: pointer;
   width: 28px;
   height: 28px;
-  border: none;
-  border-radius: var(--border-radius);
   margin-right: var(--base-space);
-  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  background-color: rgba(255, 255, 255, 0.0);
 }
 .todo-list span {
   font-size: var(--font-size);

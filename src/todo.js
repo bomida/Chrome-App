@@ -20,6 +20,7 @@ function deleteTodo(event) {
   const li = event.target.parentElement;
   // part3-선택 된 li를 삭제
   li.remove();
+  // 선택된 toDo의 id가 li의 id와 다른 것은 남긴다.
   toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
   saveToDos();
 }
