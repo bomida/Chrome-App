@@ -31,6 +31,10 @@ HTML, CSS, Vanilla JS를 이용하여 크롬 앱을 만들었습니다.
   - setInterval()함수로 1초마다 시간을 업데이트한다.
   - padStart()로 한자리 숫자일 때 앞에 '0'을 붙여 두자리 수로 만들어준다.
   - Math()함수를 이용해 랜덤 숫자를 구한다.
+  - appendChild()메소드로 만든 img태그를 body영역에 마지막 자식으로 추가해준다.
+  - stringify()로 toDos 배열의 요소를 문자열로 변환해 localStorage에 저장한다.
+  - parse()로 localStorage에 저장되어있던 요소들을 다시 가져와 배열의 형태로 만들어준다.
+  - filter(), parseInt 
 
 <br>
 

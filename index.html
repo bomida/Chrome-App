@@ -4,52 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Chrome App</title>
 </head>
 <body>
-  <!-- greeting -->
-  <form id="login-form" class="hidden">
-    <input
-      required
-      maxlength="15"
-      type="text"
-      placeholder="What is your name?">
-    <input
-      type="submit"
-      value="Lon In">
-  </form>
-  <h1 id="greeting" class="hidden"></h1>
+  <div class="left">
+    <!-- clock area -->
+    <h2 id="clock" class="clock"></h2>
+    
+    <!-- greeting area -->
+    <form id="login-form" class="login-form hidden">
+      <input
+        required
+        type="text"
+        maxlength="15"
+        placeholder="Put your name please">
+      <input
+        required
+        type="submit"
+        value="Login">
+    </form>
+    <h1 id="greeting" class="greeting hidden"></h1>
 
-  <!-- to do list -->
-  <form id="todo-form">
-    <input required type="text" placeholder="Write a To Do and Press Enter">
-  </form>
-  <ul id="todo-list">
-    <li></li>
-  </ul>
+    <!-- quotes -->
+    <div id="quote" class="quote">
+      <span></span>
+    </div>
 
-  <!-- clock -->
-  <h2 id="clock"></h2>
-
-  <!-- quote -->
-  <div id="quote">
-    <span></span>
+    <!-- weather area -->
+    <div id="weather" class="weather">
+      <span></span>
+      <span></span>
+    </div>
   </div>
 
-  <!-- weather area -->
-  <div id="weather">
-    <span></span>
-    <span></span>
+
+  <!-- todo list area -->
+  <div class="right">
+    <form id="todo-form" class="todo-form">
+      <input
+        required
+        type="text"
+        placeholder="Write a To Do and Press Enter">
+    </form>
+    <ul id="todo-list" class="todo-list">
+      <li></li>
+    </ul>
   </div>
+  
+
+  <!-- BG area -->
+  <div id="background" class="background"></div>
+
 
   <script src="./src/greeting.js"></script>
+  <script src="./src/todo.js"></script>
   <script src="./src/clock.js"></script>
   <script src="./src/quotes.js"></script>
-  <script src="./src/backgroun.js"></script>
-  <script src="./src/todo.js"></script>
+  <script src="./src/background.js"></script>
   <script src="./src/weather.js"></script>
 </body>
 </html>

@@ -11,6 +11,8 @@ function getClock() {
   clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
+
+
 getClock();
 // setInterval은 지정한 시간이 지나면 무한대로 함수를 반복해주는 함수
 // setTimeout은 지정한 시간이 지나면 한번만 함수를 실행시켜주는 함수

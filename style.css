@@ -1,65 +1,146 @@
 @charset 'UTF-8';
 @import 'reset.css';
 
-body {
-  font-family:monospace;
+:root {
+  /* color */
+  --color-white: #fff;
+  --color-black: #222;
+  --color-grey: #555;
+  --bg-white: rgba(240, 248, 255, 0.7);
+  --bg-black: rgba(0, 0, 0, 0.5);
 
-  width: 100vw;
-  height: 100vh;
+  /* size */
+  --font-size: 16px;
+  --border-size: 2px solid #666;
+  --border-radius: 25px;
+  --base-space: 10px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  color: aliceblue;
-
+  /* animation */
+  --animation-duration: .3s ease;
 }
+
+/* common area */
 .hidden {
   display: none;
 }
-input {
-  all: inherit;
-  display: inline;
-  height: 50px;
-  padding: 0 24px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #222;
-  /* text-align: center; */
-  font-size: 1rem;
-}
-input::placeholder {
-  color: #555;
-}
-h2 {
-  margin: 40px 0;
-  font-size: 5rem;
+
+body {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  font-family: monospace;
 }
 
-img {
-  min-width: 1280px;
-  min-height: 700px;
 
-  width: 100%;
-  height: auto;
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  color: var(--color-black);
+  background: var(--bg-white);
+}
 
+.clock {
+  font-size: 60px;
+}
+
+.login-form {
+  margin: 30px 0 60px;
+  font-size: var(--font-size);
+}
+.login-form input[type = 'text'] {
+  all: unset;
+  width: 250px;
+  margin-bottom: 30px;
+  padding: var(--base-space);
+  border-bottom: var(--border-size);
+  transition: var(--animation-duration);
+}
+.login-form input::placeholder{
+  color: var(--color-grey);
+}
+.login-form input[type = 'submit'] {
+  all: unset;
+  width: 60px;
+  padding: var(--base-space);
+  border: var(--border-size);
+  border-radius: var(--border-radius);
+  color: var(--color-grey);
+  transition: var(--animation-duration);
+}
+.login-form input[type = 'submit']:hover {
+  background-color: var(--bg-black);
+  color: var(--bg-white);
+}
+.greeting {
+  margin: 30px 0 60px;
+  font-size: 30px;
+}
+
+.quote {
+  font-size: var(--font-size);
+  margin-bottom: 15px;
+}
+.weather {
+  font-size: var(--font-size);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  color: var(--color-white);
+  background-color: var(--bg-black);
+  /* color: var(--color-white); */
+}
+
+/* todo-form */
+.todo-form {
+  margin-top: 80px;
+}
+.todo-form input[type = 'text'] {
+  all: unset;
+  width: 280px;
+  font-size: var(--font-size);
+  padding: var(--base-space);
+  margin-bottom: 60px;
+  border-bottom: 1px solid #fff;
+}
+.todo-form input::placeholder{
+  color: var(--color-white);
+}
+.todo-list {
+  width: 280px;
+  margin: 0 auto;
+}
+.todo-list button {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: var(--border-radius);
+  margin-right: var(--base-space);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.todo-list span {
+  font-size: var(--font-size);
+}
+
+
+.background {
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
-span {
-  font-size: 1.1rem;
-}
-
-button {
-  margin-right: 15px;
-  text-align: center;
-  border: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  font-size: 16px;
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
